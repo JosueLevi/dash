@@ -4,7 +4,7 @@ import plotly.express as px
 from pathlib import Path
 
 st.set_page_config(page_title="Gantt Proyecto Web", layout="wide")
-st.title("SISE WEB")
+st.title("PLANIFICACIÓN DE ACTIVIDADES - SISE WEB")
 
 FILE_PATH = Path("data.xlsx")
 
@@ -114,3 +114,4 @@ st.plotly_chart(fig, use_container_width=True)
 with st.expander("📋 Ver tabla"):
     st.dataframe(df_f[["Fase", "Actividad", "Inicio", "Fin", "Responsable", "Estado"]],
                  use_container_width=True)
+
